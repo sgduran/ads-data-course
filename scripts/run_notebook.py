@@ -1,11 +1,16 @@
 """Execute the course notebook from its expected directory and save fresh outputs."""
 from pathlib import Path
+import argparse
 
 import nbformat
 from nbclient import NotebookClient
 
 ROOT = Path(__file__).resolve().parents[1]
-path = ROOT / "notebooks" / "01_explore_taobao_ads.ipynb"
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("notebook", nargs="?", default="01_explore_taobao_ads.ipynb",
+                    help="Notebook filename inside notebooks/")
+args = parser.parse_args()
+path = ROOT / "notebooks" / args.notebook
 notebook = nbformat.read(path, as_version=4)
 for cell in notebook.cells:
     if cell.cell_type == "code":
