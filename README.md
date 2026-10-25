@@ -36,7 +36,7 @@ https://tianchi.aliyun.com/dataset/56
 Licencia de los datos: CC BY-NC-SA 4.0. La descarga usa una revisión fija de
 una copia pública en Hugging Face; véase `download_data.py`.
 
-## 02 · Entrenar y evaluar pCTR (UBA)
+## 02 · Training and evaluating pCTR
 
 [`notebooks/02_train_pctr_taobao.ipynb`](notebooks/02_train_pctr_taobao.ipynb)
 continúa la exploración con una clasificación binaria de clics. Reutiliza los
