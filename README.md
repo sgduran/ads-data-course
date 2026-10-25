@@ -23,8 +23,10 @@ El notebook completo requiere alrededor de 6 GB de memoria libre.
 El notebook está en `notebooks/01_explore_taobao_ads.ipynb`; su directorio de
 trabajo debe ser `notebooks/`. El ejecutor configura esa ruta, ejecuta todas
 las celdas y solo reemplaza las salidas guardadas si la ejecución termina bien.
-El archivo adjunto original ya incluye resultados de una ejecución anterior;
-su presencia por sí sola no demuestra una ejecución en este entorno.
+Validado en el entorno en la nube el 25 de octubre de 2026: los tres CSV
+pasaron la comprobación SHA-256 y las 30 celdas se ejecutaron con el conjunto
+completo. El notebook contiene las salidas de esa ejecución (26.557.961
+impresiones, 1.366.056 clics; CTR del 5,14%).
 
 ## Datos
 
